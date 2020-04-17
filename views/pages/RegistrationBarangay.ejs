@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Create User Page</title>
+    <title>Barangay Officials Registration Form</title>
 
     <!-- Bootstrap -->
     <link href="assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -81,10 +81,10 @@
     }
 
     input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 </style>
 
@@ -102,30 +102,29 @@
 </div>
 <%}%>
     <%}%>
-
-<body class="nav-md" style="background-color: #232931;">
+<body class="nav-md" style="background-color:#D8345F;">
     <div class="container body">
-        <div class="main_container" style="background-color: #232931;">
-
+        <div class="main_container" style="background-color: #D8345F;">
+            
             <!-- page content -->
-            <div class="right_col" role="main" style="background-color: #232931;">
+            <div class="right_col" role="main" style="background-color: #202040">
                 <div class="">
                     <div class="page-title">
                         <div class="title_left">
-
-                            <h3 style="color: #dddddd;">Barangay Officials Registration Form</h3>
-
+            
+                            <h3 style="color: #FFBD69;">Barangay Officials Registration Form</h3>
+            
                         </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="x_panel" style="background-color: #393e46; border-color: #393e46;  border-radius: 8px;">
+                        <div class="x_panel" style="background-color: #543846; border-color: #543846;  border-radius: 8px;">
                             <div class="x_content">
                                 <br />
-                                <form id="barangay-registration-form" data-parsley-validate class="form-horizontal form-label-left" name="registerform" action="RegisterUser" method="POST">
-
+                                <form id="barangay-registration-form" data-parsley-validate class="form-horizontal form-label-left" action="" method="POST">
+            
                                     <div class="form-group">
                                         <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
                                         </label>
@@ -142,29 +141,22 @@
                                             <input type="text" id="last-name" name="lastname" required="required" class="form-control col-md-7 col-xs-12" placeholder="Last Name">
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Password <span class="required">*</span>
-                                        </label>
-                                        <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <!--Password input field-->
-                                            <input type="text" id="password" name="password" class="form-control col-md-7 col-xs-12" placeholder="1234" value="1234" readonly>
-                                        </div>
-                                    </div>
-
+                                    
+                                    
                                     <!--options list of position-->
                                     <div class="form-group">
                                         <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Select Position of Applicant</label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
                                             <select class="form-control" name="role">
                                                 <option value="-1">Pick Position</option>
-
+                                                
                                                 <option value="0"> Punong Barangay</option>
                                                 <option value="0"> Sanguniang Barangay</option>
-                                                <option value="0"> SK Chairman</option>
+                                                <option value="0"> SK Chairman</option> 
                                                 <option value="0"> Barangay Captain</option>
                                                 <option value="0"> Barangay Secretary</option>
-
-
+                                                
+                                                
                                             </select>
                                         </div>
                                     </div>
@@ -177,84 +169,76 @@
                                         </div>
                                         <input type="hidden" name="count" value="">
                                     </div>
-
+                                    <div class="form-group">
+                                        <label style="color: #dddddd;" for="email" class="control-label col-md-3 col-sm-3 col-xs-12">Email Addess</label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <!--Email Input field-->
+                                            <input id="email" class="form-control col-md-7 col-xs-12" type="email" name="email" placeholder="example@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Password <span class="required">*</span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <!--Password input field-->
+                                            <input type="text" id="password" name="password" class="form-control col-md-7 col-xs-12" placeholder="Enter your password">
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                                             <a href="/ViewUsers" class="btn btn-dark" type="button">Cancel</a>
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                         </div>
                                     </div>
-
+            
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-
-
-            </div>
+            
+            
+                
+            
+            </div> 
         </div>
-    </div>
+        </div>
 
-    <!-- jQuery -->
-    <script>
-        $('form[name="registerform"]').submit(function(event) {
-            event.preventDefault();
-            var post_url = $(this).attr("action");
-            var request_method = $(this).attr("method");
-            var form_data = new FormData(this)
-            var fdata = $(this).serializeArray();
-
-            $.ajax({
-                url: post_url,
-                type: request_method,
-                data: form_data,
-                processData: false,
-                contentType: false,
-                dataType: 'json',
-                success: function(data) {
-                    console.log(data);
-                },
-            })
-        });
-
-    </script>
-    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="assets/vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="assets/vendors/nprogress/nprogress.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
-    <script src="assets/vendors/iCheck/icheck.min.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="assets/vendors/moment/min/moment.min.js"></script>
-    <script src="assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap-wysiwyg -->
-    <script src="assets/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
-    <script src="assets/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
-    <script src="assets/vendors/google-code-prettify/src/prettify.js"></script>
-    <!-- jQuery Tags Input -->
-    <script src="assets/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
-    <!-- Switchery -->
-    <script src="assets/vendors/switchery/dist/switchery.min.js"></script>
-    <!-- Select2 -->
-    <script src="assets/vendors/select2/dist/js/select2.full.min.js"></script>
-    <!-- Parsley -->
-    <script src="assets/vendors/parsleyjs/dist/parsley.min.js"></script>
-    <!-- Autosize -->
-    <script src="assets/vendors/autosize/dist/autosize.min.js"></script>
-    <!-- jQuery autocomplete -->
-    <script src="assets/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
-    <!-- starrr -->
-    <script src="assets/vendors/starrr/dist/starrr.js"></script>
-    <!-- Custom Theme Scripts -->
-    <script src="assets/build/js/custom.min.js"></script>
+        <!-- jQuery -->
+        <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- FastClick -->
+        <script src="assets/vendors/fastclick/lib/fastclick.js"></script>
+        <!-- NProgress -->
+        <script src="assets/vendors/nprogress/nprogress.js"></script>
+        <!-- bootstrap-progressbar -->
+        <script src="assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+        <!-- iCheck -->
+        <script src="assets/vendors/iCheck/icheck.min.js"></script>
+        <!-- bootstrap-daterangepicker -->
+        <script src="assets/vendors/moment/min/moment.min.js"></script>
+        <script src="assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <!-- bootstrap-wysiwyg -->
+        <script src="assets/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+        <script src="assets/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+        <script src="assets/vendors/google-code-prettify/src/prettify.js"></script>
+        <!-- jQuery Tags Input -->
+        <script src="assets/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+        <!-- Switchery -->
+        <script src="assets/vendors/switchery/dist/switchery.min.js"></script>
+        <!-- Select2 -->
+        <script src="assets/vendors/select2/dist/js/select2.full.min.js"></script>
+        <!-- Parsley -->
+        <script src="assets/vendors/parsleyjs/dist/parsley.min.js"></script>
+        <!-- Autosize -->
+        <script src="assets/vendors/autosize/dist/autosize.min.js"></script>
+        <!-- jQuery autocomplete -->
+        <script src="assets/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
+        <!-- starrr -->
+        <script src="assets/vendors/starrr/dist/starrr.js"></script>
+        <!-- Custom Theme Scripts -->
+        <script src="assets/build/js/custom.min.js"></script>
 
 </body>
 
