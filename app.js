@@ -18,6 +18,8 @@ server.use(fileUpload({
     safeFileNames: true,
     preserveExtension: 10
 }));
+var routes = require('./routes');
+server.set('view engine', 'ejs');
 var admin = require("firebase-admin");
 
 var serviceAccount = require("./credentials/service.json");
@@ -31,7 +33,8 @@ admin.initializeApp({
 //---------
 
 server.get('/', function (req, resp) {
-    resp.send("Hello world")
+    resp.render('./pages/RegistrationBarangay.ejs')
+    /*
     var db = admin.database();
     var ref = db.ref("testing");
     var usersRef = ref.child("users");
@@ -49,8 +52,10 @@ server.get('/', function (req, resp) {
             full_name: "Jericho Mendoza"
         }
     });
+    */
 });
 
+server.use('/', routes);
 
 server.get('/*', function (req, resp) {
     resp.send('Error');
