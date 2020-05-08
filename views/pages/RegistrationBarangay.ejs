@@ -107,7 +107,8 @@
 
      <!-- F I R E B A S E   C O N N E C T I O N -->
         <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
-
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
         <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -123,9 +124,11 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics(); 
-    
+        
+        var database = firebase.database();
+
         function writeData() {
-            firebase.database().ref("BarangayOfficials").set({
+            firebase.database().ref("BarangayOfficials").push({
                 FirstName: document.getElementById("first-name").value,
                 LastName: document.getElementById("last-name").value,
                 Contact: document.getElementById("contact").value,
@@ -155,8 +158,8 @@
                         <div class="x_panel" style="background-color: #543846; border-color: #543846;  border-radius: 8px;">
                             <div class="x_content">
                                 <br />
-                                <form id="barangay-registration-form" data-parsley-validate class="form-horizontal form-label-left" name="registerform" action="RegisterUser" method="POST">
-
+                                <form id="barangay-registration-form" data-parsley-validate class="form-horizontal form-label-left" name="registerform" >
+ 
                                     <div class="form-group">
                                         <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
                                         </label>
@@ -223,7 +226,7 @@
                                         </div>
                                     </div>
 
-                                </form>
+                                
                             </div>
                         </div>
                     </div>
