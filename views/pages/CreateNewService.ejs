@@ -124,7 +124,7 @@
                         <div class="x_panel" style="background-color: #543846; border-color: #543846;  border-radius: 8px;">
                             <div class="x_content">
                                 <br />
-                                <form id="new-services-form" data-parsley-validate class="form-horizontal form-label-left" name="registerform" action="RegisterActivity" method="POST">
+                                <form id="new-services-form" data-parsley-validate class="form-horizontal form-label-left">
 
                                     <div class="form-group">
                                         <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12" for="service-name">Service Name: <span class="required">*</span>
@@ -148,14 +148,20 @@
                                     <div class="form-group">
                                         <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Select Possible Configurations: </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <select class="form-control" name="role">
-                                                <option value="-1">Pick Position</option>
+                                            <select class="form-control" id="config" name="role">
+                                                <option value="-1">Pick Configuration/s</option>
 
-                                                <option value="0"> Punong Barangay</option>
-                                                <option value="0"> Sanguniang Barangay</option>
-                                                <option value="0"> SK Chairman</option>
-                                                <option value="0"> Barangay Captain</option>
-                                                <option value="0"> Barangay Secretary</option>
+                                                <option value="Application and Requirements">Application and Requirements</option>
+                                                <option value="Approving Official">Approving Official</option>
+                                                <option value="e-Document Generation">e-Document Generation</option>
+                                                <option value="e-ID">e-ID</option>
+                                                <option value="e-Payment">e-Payment</option>
+                                                <option value="e-Receipt">e-Receipt</option>
+                                                <option value="Fund Distribution">Fund Distribution</option>
+                                                <option value="Goods Distribution">Goods Distribution</option>
+                                                <option value="Receipt of Service">Receipt of Service (Contact Services) through QR Code Scanning</option>
+                                                <option value="Recommending Official">Recommending Official</option>
+                                                <option value="Staff in-charge">Staff in-charge</option>
 
 
                                             </select>
@@ -164,7 +170,7 @@
                                     
                                     <div class="form-group">
                                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                            <a href="/ViewUsers" class="btn btn-dark" type="button">Cancel</a>
+                                            
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                         </div>
                                     </div>
@@ -181,63 +187,18 @@
             </div>
         </div>
     </div>
-    <script>
-        $('form[name="registerform"]').submit(function(event) {
-            event.preventDefault();
-            var post_url = $(this).attr("action");
-            var request_method = $(this).attr("method");
-            var form_data = new FormData(this)
-            var fdata = $(this).serializeArray();
+    
+    
 
-            $.ajax({
-                url: post_url,
-                type: request_method,
-                data: form_data,
-                processData: false,
-                contentType: false,
-                dataType: 'json',
-                success: function(data) {
-                    processdata(data, fdata);
-                },
-            })
-        });
-
-    </script>
-    <!-- jQuery -->
-    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="assets/vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="assets/vendors/nprogress/nprogress.js"></script>
-    <!-- bootstrap-progressbar -->
-    <script src="assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- iCheck -->
-    <script src="assets/vendors/iCheck/icheck.min.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="assets/vendors/moment/min/moment.min.js"></script>
-    <script src="assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- bootstrap-wysiwyg -->
-    <script src="assets/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
-    <script src="assets/vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
-    <script src="assets/vendors/google-code-prettify/src/prettify.js"></script>
-    <!-- jQuery Tags Input -->
-    <script src="assets/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
-    <!-- Switchery -->
-    <script src="assets/vendors/switchery/dist/switchery.min.js"></script>
-    <!-- Select2 -->
-    <script src="assets/vendors/select2/dist/js/select2.full.min.js"></script>
-    <!-- Parsley -->
-    <script src="assets/vendors/parsleyjs/dist/parsley.min.js"></script>
-    <!-- Autosize -->
-    <script src="assets/vendors/autosize/dist/autosize.min.js"></script>
-    <!-- jQuery autocomplete -->
-    <script src="assets/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
-    <!-- starrr -->
-    <script src="assets/vendors/starrr/dist/starrr.js"></script>
-    <!-- Custom Theme Scripts -->
-    <script src="assets/build/js/custom.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script> 
+    <!-- F I R E B A S E   C O N N E C T I O N -->  
+    
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script> 
+    <script src="CreateNewService.js"></script>
 
 </body>
 
