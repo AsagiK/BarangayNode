@@ -33,7 +33,7 @@ admin.initializeApp({
 //---------
 
 server.get('/', function (req, resp) {
-    resp.render('./pages/CreateNewService.ejs')
+    resp.render('./pages/Dashboard.ejs')
     /*
     var db = admin.database();
     var ref = db.ref("testing");

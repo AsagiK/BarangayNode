@@ -12,6 +12,8 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig); 
 
   var con = firebase.database().ref('officials');
+  
+  const auth = firebase.auth();
 
   document.getElementById('form').addEventListener("submit", (e) => {
       e.preventDefault();
@@ -33,4 +35,13 @@ var firebaseConfig = {
 
   function getId(id){
       return document.getElementById(id).value;
+  } 
+  function signUp(){
+    var email = document.getElementById("email");
+    var password = document.getElementById("password");
+
+    const promise = auth.createUserWithEmailAndPassword(email.value, password.value);
+    promise.catch(e => alert(e.message));
+
+    alert("Account Creation Successful")
   }
