@@ -28,13 +28,8 @@ var serviceAccount = require("../credentials/service.json");
 //---------
 module.exports = {
     
-    RegistrationBarangay: function (req, resp) {
-        resp.render('./pages/RegistrationBarangay.ejs')
+    CreateNewService: function (req, resp) {
+        resp.render('./pages/CreateNewService.ejs')
 
     },
-    
-    RegisterUser: function(req,resp){
-        console.log(req.body);
-    }
-
 }
