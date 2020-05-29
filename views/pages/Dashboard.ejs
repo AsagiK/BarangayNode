@@ -7,19 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home | </title>
+    <title>Home </title>
 
     <!-- Bootstrap -->
-    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="assets/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- bootstrap-daterangepicker -->
-    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="assets/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <link href="assets/build/css/custom.min.css" rel="stylesheet">
     </head> 
 
     <body class="nav-md">
@@ -27,18 +27,21 @@
             <div class="main_container">
               <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
-                  <div class="navbar nav_title" style="border: 0;">
-                    <a href="Dashboard.ejs" class="site_title"><i class="fa fa-paw"></i> <span>Welcome!</span></a>
-                  </div> 
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a  class="site_title"><i class="fa fa-paw"></i> <span>Welcome!</span></a>
+                      </div>
+                    <br>
+                    <br>
+
+                    <div class="profile clearfix">
+                        <div class="profile_info">
+                           
+                            <span style="font-size: medium; color: white;">Logged In as: User name</span> 
+
+                        </div>
+                    </div>                    
 
                   <div class="clearfix"></div>
-
-                  <div class="profile clearfix">
-                      <div class="profile_info">
-                          <span>WELCOME</span>
-                          <h2>User name</h2>
-                      </div>
-                  </div>
 
                   <br>
 
@@ -48,8 +51,8 @@
                           <ul class="nav side-menu">
                               <li><a><i class="fa fa-home"></i>Tasks <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="">Clerical Assessment</a></li>
-                                    <li><a href="">Approval or Disapproval (CA)</a></li>
+                                    <li><a href="/ClericalAssesment">Clerical Assessment</a></li>
+                                    <li><a href="/ApprovalPage">Approval or Disapproval (CA)</a></li>
                                 </ul>
                               </li>
                               <li><a><i class="fa fa-desktop"></i>Create <span class="fa fa-chevron-down"></span></a>
@@ -61,7 +64,8 @@
                             
                           </ul>
                       </div>
-                  </div>
+                  </div> 
+
 
                 </div>
              </div>
@@ -69,35 +73,35 @@
         </div>
         
         <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <script src="assets/vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
+    <script src="assets/vendors/nprogress/nprogress.js"></script>
     <!-- Chart.js -->
-    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <script src="assets/vendors/Chart.js/dist/Chart.min.js"></script>
     <!-- jQuery Sparklines -->
-    <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+    <script src="assets/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
     <!-- Flot -->
-    <script src="../vendors/Flot/jquery.flot.js"></script>
-    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <script src="assets/vendors/Flot/jquery.flot.js"></script>
+    <script src="assets/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="assets/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="assets/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="assets/vendors/Flot/jquery.flot.resize.js"></script>
     <!-- Flot plugins -->
-    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="assets/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="assets/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="assets/vendors/flot.curvedlines/curvedLines.js"></script>
     <!-- DateJS -->
-    <script src="../vendors/DateJS/build/date.js"></script>
+    <script src="assets/vendors/DateJS/build/date.js"></script>
     <!-- bootstrap-daterangepicker -->
-    <script src="../vendors/moment/min/moment.min.js"></script>
-    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="assets/vendors/moment/min/moment.min.js"></script>
+    <script src="assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
     
     <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
-    </body>
+    <script src="assets/build/js/custom.min.js"></script>
+</body>
 
 </html>

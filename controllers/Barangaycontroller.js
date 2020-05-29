@@ -31,5 +31,15 @@ module.exports = {
     CreateNewService: function (req, resp) {
         resp.render('./pages/CreateNewService.ejs')
 
-    },
+    }, 
+
+    ClericalAssesment: function (req, resp) {
+        resp.render('./pages/ClericalAssesment.ejs')
+
+    }, 
+
+    ApprovalPage: function (req, resp) {
+        resp.render('./pages/ApprovalPage.ejs')
+
+    }, 
 }

@@ -110,7 +110,7 @@
                                     <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="contact">Contact Number:                                       
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input required type="number" id="contact" name="contact"  class="form-control" placeholder="Contact #">
+                                        <input required type="text" id="contact" name="contact"  class="form-control" placeholder="Contact #">
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
                                     <span class="required">*</span>
                                     </label>
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input required type="email" id="email" name="email" class="form-control" placeholder="Email">
+                                        <input required type="text" id="email" name="email" class="form-control" placeholder="Email">
                                     </div>
                                     
                                 </div>
@@ -162,7 +162,9 @@
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <div class="ol-md-6 col-sm-6 col-xs-12 col-md-offset-5">
-                                        <button type="submit" onclick="signUp()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Sign Up</button>
+                                        <button type="submit" onclick="signUp()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Sign Up</button> 
+                                        <button onclick="goBack()"  class="btn btn-rimary" style="background-color: #2196F3; color: white;">Go Back</button>
+
                                     </div>
                                 </div>
                                 
@@ -178,7 +180,14 @@
         
 
         
-    </div>
+    </div> 
+
+    
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+        </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
