@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta gttp-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Barangay Officials Registration Form</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="assets/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="assets/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="assets/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="assets/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="assets/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="assets/vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="assets/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="assets/build/css/custom.min.css" rel="stylesheet">
+    <style>
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+        }
+
+        .alert.success {
+            background-color: #4CAF50;
+        }
+
+        .alert.info {
+            background-color: #2196F3;
+        }
+
+        .alert.warning {
+            background-color: #ff9800;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel" style="background-color: #543846; border-color: #543846 border-radius: 8px;">
+                <div class="x_content">
+                    <form id="form" data-parsley-validate class="form-horizontal form-label-left">
+                        <h1 style="color: white;">Barangay Community Tax Certificate Application Form</h1>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="name">Name:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="name" name="name" class="form-control" placeholder="Name">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Address:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="address" name="address" class="form-control" placeholder="Address">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="citizenship">Citizenship:
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="citizenship" name="citizenship" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="position">Sex:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                    <select class="form-control" name="sex" id="sex" aria-placeholder="Specify Sex">
+                                        <option value="-1">Specify Sex</option>
+                                        <option value="M">Male</option>
+                                        <option value="F">Female</option>
+
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="position">Status:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                    <select class="form-control" name="status" id="status" aria-placeholder="Status">
+                                        <option value="-1">Status</option>
+                                        <option value="Single">Single</option>
+                                        <option value="Married">Married</option>
+                                        <option value="Widower">Widower</option>
+                                        <option value="Separated">Separated</option>
+                                        <option value="Solo Parent">Solo Parent</option>
+
+
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Birthdate:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="date" id="birthdate" name="birthdate" class="form-control" placeholder="Birthdate:">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Birthplace:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="birthplace" name="birthplace" class="form-control" placeholder="Birthplace">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Weight:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="weight" name="weight" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Height:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="height" name="height" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Occupation:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="occupation" name="occupation" class="form-control" placeholder="Occupation">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Total Gross Receipts from Business:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="receipts" name="receipts" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Total Earnings from Salaries/Profession:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="earnings" name="earnings" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Total Income from Real Property:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="income" name="income" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">TIN#:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="tin" name="tin" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="ol-md-6 col-sm-6 col-xs-12 col-md-offset-5">
+                                    <button type="submit" onclick="signUp()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Submit</button>
+                                    <button onclick="goBack()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Go Back</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <!-- F I R E B A S E   C O N N E C T I O N -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
