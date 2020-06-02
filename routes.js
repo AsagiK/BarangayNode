@@ -10,5 +10,5 @@ router.route('/RegisterUser').post(SessCtrl.RegisterUser);
 router.route('/CreateNewService').get(BrgyCtrl.CreateNewService); 
 router.route('/ClericalAssesment').get(BrgyCtrl.ClericalAssesment);
 router.route('/ApprovalPage').get(BrgyCtrl.ApprovalPage);
-
+router.route('/Dashboard').get(BrgyCtrl.Dashboard);
 module.exports = router;

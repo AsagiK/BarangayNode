@@ -25,4 +25,8 @@ var firebaseConfig = {
             $("#table_body").append("<tr><td>"+ Fname + " " + Lname+"</td><td>"+ Position +"</td><td>"+ Email +"</td><td>"+number+"</td><td><button type='button' class='btn btn-primary' style='background-color: #2196F3; color: white;'>Approve</button> <br> <button type='button' class='btn btn-primary' style='background-color: #2196F3; color: white;'>Disapprove</button></td></tr>");
 
         });
-  });
+  }); 
+
+  
+   
+     

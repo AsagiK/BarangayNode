@@ -42,4 +42,9 @@ module.exports = {
         resp.render('./pages/ApprovalPage.ejs')
 
     }, 
+
+    Dashboard: function (req, resp) {
+        resp.render('./pages/Dashboard.ejs')
+
+    }, 
 }
