@@ -20,8 +20,7 @@ var firebaseConfig = {
     const promise = auth.signInWithEmailAndPassword(email.value, password.value);
     promise.catch(e => alert(e.message));
 
-    window.location.href="Dashboard.ejs";
-
+   
   } 
 
   function signOut(){
@@ -30,18 +29,23 @@ var firebaseConfig = {
       
   } 
 
+  function signUp(){
+    window.location.href="/CreateNewService";
+    
+} 
+
   var user = firebase.auth().currentUser;
 
   auth.onAuthStateChanged(function(user){  
-       if(user){
+       if(user != null){
            var email = user.email;
            
            alert("Logged In " + email);
            console.log(email);
-           
+            window.location.href="/Dashboard";
 
            // is signed up
-       }else {
+       }else if (user = null) {
 
         alert("No active user" );
            // no user is signed in

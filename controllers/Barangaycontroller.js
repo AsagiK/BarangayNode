@@ -47,4 +47,9 @@ module.exports = {
         resp.render('./pages/Dashboard.ejs')
 
     }, 
+
+    Login: function (req, resp) {
+        resp.render('./pages/Login.ejs') 
+
+    }, 
 }

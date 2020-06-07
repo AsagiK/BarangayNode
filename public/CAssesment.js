@@ -25,5 +25,6 @@ var firebaseConfig = {
 
             $("#table_body").append("<tr><td>"+ Fname + " " + Lname+"</td><td>"+ School +"</td><td>"+ Email +"</td><td>"+number+"</td><td>"+GProgram+"</td><td>"+HIssues+"</td></tr>");
 
+            
         });
   });
