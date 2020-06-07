@@ -15,11 +15,10 @@ var firebaseConfig = {
 
 
   function signOut(){
-    var user = firebase.auth().currentUser;
-
-    auth.signOut
-    
-  } 
+    auth.signOut();
+    alert("Logged Out");
+    window.location.href="/Login";
+} 
 
   
 
