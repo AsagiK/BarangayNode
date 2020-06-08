@@ -22,9 +22,15 @@ var firebaseConfig = {
             var number = snap.child("number").val();
             var GProgram = snap.child("gp").val();
             var HIssues = snap.child("hi").val();
-
-            $("#table_body").append("<tr><td>"+ Fname + " " + Lname+"</td><td>"+ School +"</td><td>"+ Email +"</td><td>"+number+"</td><td>"+GProgram+"</td><td>"+HIssues+"</td></tr>");
+            
+            $("#table_body").append("<tr><td>"+ Fname + " " + Lname+"</td><td>"+ School +"</td><td>"+ Email +"</td><td>"+number+"</td><td>"+GProgram+"</td><td>"+HIssues+
+            "</td><td><button onclick='Comment()' id='addComm' class='btn btn-primary'>Add Comments</button></td></tr>");
 
             
         });
-  });
+  }); 
+
+  function Comment(){
+    window.location.href="/Comment";
+    
+} 

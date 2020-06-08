@@ -62,4 +62,14 @@ module.exports = {
         resp.render('./pages/Login.ejs')
 
     },
+
+    BarangayResApp: function (req, resp) {
+        resp.render('./pages/BarangayResApp.ejs')
+
+    },
+
+    Comment: function (req, resp) {
+        resp.render('./pages/AddComment.ejs')
+
+    },
 }

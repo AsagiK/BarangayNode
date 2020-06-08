@@ -14,4 +14,6 @@ router.route('/CommunityTax').get(BrgyCtrl.CommunityTax);
 router.route('/ApprovalPage').get(BrgyCtrl.ApprovalPage);
 router.route('/Dashboard').get(BrgyCtrl.Dashboard);
 router.route('/Login').get(BrgyCtrl.Login);
+router.route('/BarangayResApp').get(BrgyCtrl.BarangayResApp);
+router.route('/Comment').get(BrgyCtrl.Comment);
 module.exports = router;
