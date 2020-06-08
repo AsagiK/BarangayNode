@@ -79,20 +79,11 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel" style="background-color: #543846; border-color: #543846 border-radius: 8px;">
                 <div class="x_content">
-                    <form id="form" data-parsley-validate class="form-horizontal form-label-left">
+                    <form id="pwd-form" data-parsley-validate class="form-horizontal form-label-left">
                         <h1 style="color: white;">Appplication for Person With Disability Form</h1>
-
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend ">
-                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="lname">Last Name
-                                    <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input required type="text" id="lname" name="lname" class="form-control" placeholder="">
-                                </div>
-
-                            </div>
-                        </div>
+                        <br>
+                        <br>
+                        
 
 
                         <div class="input-group mb-3">
@@ -102,6 +93,18 @@
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input required type="text" id="fname" name="fname" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div> 
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="lname">Last Name
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="lname" name="lname" class="form-control" placeholder="">
                                 </div>
 
                             </div>
@@ -121,24 +124,24 @@
 
 
 
-                        <h2 style="color: white;">Type of Disability</h2>
+                        
 
                         <div class="form-group">
-                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Please Select Only 1</label>
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12"> Type of Disability (Please Select Only 1):</label>
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <select class="form-control" id="distype" name="distype" size="5">
 
 
-                                    <option value="0">Psychosocial Disability</option>
-                                    <option value="1">Mental Disability</option>
-                                    <option value="2">Hearing Disability</option>
-                                    <option value="3">Chronic Illness</option>
-                                    <option value="4">Visual Disability</option>
-                                    <option value="5">Speech Impairment</option>
-                                    <option value="6">Learning Disability</option>
-                                    <option value="7">Orthopedic Disability</option>
-                                    <option value="8">Multiple Disabilities</option>
+                                    <option value="Psychosocial Disability">Psychosocial Disability</option>
+                                    <option value="Mental Disability">Mental Disability</option>
+                                    <option value="Hearing Disability">Hearing Disability</option>
+                                    <option value="Chronic Illness">Chronic Illness</option>
+                                    <option value="Visual Disability">Visual Disability</option>
+                                    <option value="Speech Impairment">Speech Impairment</option>
+                                    <option value="Learning Disability">Learning Disability</option>
+                                    <option value="Orthopedic Disability">Orthopedic Disability</option>
+                                    <option value="Multiple Disabilities">Multiple Disabilities</option>
 
 
 
@@ -212,11 +215,11 @@
                             <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Sex </label>
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <select class="form-control" id="sex" name="sex" size="5">
+                                <select class="form-control" id="sex" name="sex" size="1">
 
 
-                                    <option value="0">Male</option>
-                                    <option value="1">Female</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
 
 
 
@@ -244,11 +247,11 @@
                                 <select class="form-control" id="cstatus" name="cstatus" size="5">
 
 
-                                    <option value="0">Single</option>
-                                    <option value="1">Married</option>
-                                    <option value="2">Widow/er</option>
-                                    <option value="3">Separated</option>
-                                    <option value="4">Co-Habilitation</option>
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Widow/er">Widow/er</option>
+                                    <option value="Separated">Separated</option>
+                                    <option value="Co-Habilitation">Co-Habilitation</option>
 
 
 
@@ -264,16 +267,16 @@
                                 <select class="form-control" id="eattain" name="eattain" size="5">
 
 
-                                    <option value="0">Elementary Level</option>
-                                    <option value="1">Elementary Graduate</option>
-                                    <option value="2">High School Level</option>
-                                    <option value="3">High School Graduate</option>
-                                    <option value="4">College Level</option>
-                                    <option value="5">College Graduate</option>
-                                    <option value="6">Post Graduate</option>
-                                    <option value="7">Vocational</option>
-                                    <option value="8">SPED</option>
-                                    <option value="9">None</option>
+                                    <option value="Elementary Level">Elementary Level</option>
+                                    <option value="Elementary Graduate">Elementary Graduate</option>
+                                    <option value="High School Level">High School Level</option>
+                                    <option value="High School Graduate">High School Graduate</option>
+                                    <option value="College Level">College Level</option>
+                                    <option value="College Graduate">College Graduate</option>
+                                    <option value="Post Graduate">Post Graduate</option>
+                                    <option value="Vocational">Vocational</option>
+                                    <option value="SPED">SPED</option>
+                                    <option value="None">None</option>
 
 
 
@@ -288,12 +291,12 @@
                                 <select class="form-control" id="estatus" name="estatus" size="5">
 
 
-                                    <option value="0">Employed</option>
-                                    <option value="1">Unemployed</option>
-                                    <option value="2">Retired</option>
-                                    <option value="3">Resigned</option>
-                                    <option value="4">Displaced Worker</option>
-                                    <option value="5">Returning OFW</option>
+                                    <option value="Employed">Employed</option>
+                                    <option value="Unemployed">Unemployed</option>
+                                    <option value="Retired">Retired</option>
+                                    <option value="Resigned">Resigned</option>
+                                    <option value="Displaced Worker">Displaced Worker</option>
+                                    <option value="Returning OFW">Returning OFW</option>
 
 
 
@@ -305,11 +308,11 @@
                             <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Nature of Employer</label>
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <select class="form-control" id="enature" name="enature" size="5">
+                                <select class="form-control" id="enature" name="enature" size="1">
 
 
-                                    <option value="0">Government</option>
-                                    <option value="1">Private</option>
+                                    <option value="Government">Government</option>
+                                    <option value="Private">Private</option>
 
 
 
@@ -324,10 +327,10 @@
                                 <select class="form-control" id="etype" name="etype" size="5">
 
 
-                                    <option value="0">Permanent</option>
-                                    <option value="1">Contractual</option>
-                                    <option value="2">Self-Employed</option>
-                                    <option value="3">Seasonal</option>
+                                    <option value="Permanent">Permanent</option>
+                                    <option value="Contractual">Contractual</option>
+                                    <option value="Self-Employed">Self-Employed</option>
+                                    <option value="Seasonal">Seasonal</option>
 
 
 
@@ -342,17 +345,17 @@
                                 <select class="form-control" id="typeskill" name="typeskill" size="5">
 
 
-                                    <option value="0">Officials of Govermnet and SPecila Interest Organizations, Corporate Executives, Managers, Managing Proprietors and Supervisors</option>
-                                    <option value="1">Professionals</option>
-                                    <option value="2">Technicians and Associate PProfessionals</option>
-                                    <option value="3">Clerks</option>
-                                    <option value="4">Service Workers and Shop and Market Sales Workers</option>
-                                    <option value="5">Farmers, Forestry Workers, and Fishermen</option>
-                                    <option value="6">Trades and Related Works</option>
-                                    <option value="7">Plant and Machine Operators and Assemblers</option>
-                                    <option value="8">Laborers</option>
-                                    <option value="9">Unskilled Workers</option>
-                                    <option value="10">Special Occupation</option>
+                                    <option value="Officials of Govermnet and SPecila Interest Organizations, Corporate Executives, Managers, Managing Proprietors and Supervisors">Officials of Govermnet and SPecila Interest Organizations, Corporate Executives, Managers, Managing Proprietors and Supervisors</option>
+                                    <option value="Professionals">Professionals</option>
+                                    <option value="Technicians and Associate PProfessionals">Technicians and Associate PProfessionals</option>
+                                    <option value="Clerks">Clerks</option>
+                                    <option value="Service Workers and Shop and Market Sales Workers">Service Workers and Shop and Market Sales Workers</option>
+                                    <option value="Farmers, Forestry Workers, and Fishermen">Farmers, Forestry Workers, and Fishermen</option>
+                                    <option value="Trades and Related Works">Trades and Related Works</option>
+                                    <option value="Plant and Machine Operators and Assemblers">Plant and Machine Operators and Assemblers</option>
+                                    <option value="Laborers">Laborers</option>
+                                    <option value="Unskilled Workers">Unskilled Workers</option>
+                                    <option value="Special Occupation">Special Occupation</option>
 
 
 
@@ -401,11 +404,11 @@
                         <div class="form-group">
                             <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Philhealth Type</label>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <select class="form-control" id="phealthtype" name="phealthtype" size="5">
+                                <select class="form-control" id="phealthtype" name="phealthtype" size="1">
 
 
-                                    <option value="0">Philhealth Member</option>
-                                    <option value="1">Philhealth Member Dependant</option>
+                                    <option value="Philhealth Member">Philhealth Member</option>
+                                    <option value="Philhealth Member Dependant">Philhealth Member Dependant</option>
 
 
 
@@ -413,9 +416,9 @@
                                 </select>
                             </div>
                         </div>
-
-                        <h2 style="color: white;">Organizational Information</h2>
-
+                        <br>
+                        <h2 style="color: white; text-align: center; font-size: x-large;" >Organizational Information</h2>
+                        <br>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend ">
                                 <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="orgaff">Organization Affiliated
@@ -468,7 +471,7 @@
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <div class="ol-md-6 col-sm-6 col-xs-12 col-md-offset-5">
-                                    <button type="submit" onclick="signUp()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Submit</button>
+                                    <button type="submit" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Submit</button>
                                     <button onclick="goBack()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Go Back</button>
 
                                 </div>
@@ -505,7 +508,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
-    <script src="script.js"></script>
+    <script src="PWD.js"></script>
 </body>
 
 </html>

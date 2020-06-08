@@ -76,5 +76,11 @@ module.exports = {
     Comment: function (req, resp) {
         resp.render('./pages/AddComment.ejs')
 
+    }, 
+
+    PWD: function (req, resp) {
+        resp.render('./pages/PWD.ejs')
+
     },
+
 }
