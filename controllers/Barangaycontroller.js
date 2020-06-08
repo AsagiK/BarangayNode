@@ -48,6 +48,11 @@ module.exports = {
 
     },
 
+    PWD: function (req, resp) {
+        resp.render('./pages/PWD.ejs')
+
+    },
+
     ApprovalPage: function (req, resp) {
         resp.render('./pages/ApprovalPage.ejs')
 

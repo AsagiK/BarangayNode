@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta gttp-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>PWD Application Form</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="assets/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="assets/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-wysiwyg -->
+    <link href="assets/vendors/google-code-prettify/bin/prettify.min.css" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="assets/vendors/select2/dist/css/select2.min.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="assets/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+    <!-- starrr -->
+    <link href="assets/vendors/starrr/dist/starrr.css" rel="stylesheet">
+    <!-- bootstrap-daterangepicker -->
+    <link href="assets/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="assets/build/css/custom.min.css" rel="stylesheet">
+    <style>
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            opacity: 1;
+            transition: opacity 0.6s;
+            margin-bottom: 15px;
+        }
+
+        .alert.success {
+            background-color: #4CAF50;
+        }
+
+        .alert.info {
+            background-color: #2196F3;
+        }
+
+        .alert.warning {
+            background-color: #ff9800;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel" style="background-color: #543846; border-color: #543846 border-radius: 8px;">
+                <div class="x_content">
+                    <form id="form" data-parsley-validate class="form-horizontal form-label-left">
+                        <h1 style="color: white;">Appplication for Person With Disability Form</h1>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="lname">Last Name
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="lname" name="lname" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="fname">First Name
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="fname" name="fname" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="mname">Middle Name
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="mname" name="mname" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        <h2 style="color: white;">Type of Disability</h2>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Please Select Only 1</label>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="distype" name="distype" size="5">
+
+
+                                    <option value="0">Psychosocial Disability</option>
+                                    <option value="1">Mental Disability</option>
+                                    <option value="2">Hearing Disability</option>
+                                    <option value="3">Chronic Illness</option>
+                                    <option value="4">Visual Disability</option>
+                                    <option value="5">Speech Impairment</option>
+                                    <option value="6">Learning Disability</option>
+                                    <option value="7">Orthopedic Disability</option>
+                                    <option value="8">Multiple Disabilities</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="address">Address
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="address" name="address" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="tno">Telephone No.
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="tno" name="tno" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="mno">Mobile No.
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="mno" name="mno" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="email">E-mail Address:
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="email" name="email" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="bdate">Date of Birth
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="date" id="bdate" name="bdate" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Sex </label>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="sex" name="sex" size="5">
+
+
+                                    <option value="0">Male</option>
+                                    <option value="1">Female</option>
+
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="btype">Blood Type
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="btype" name="btype" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Civil Status </label>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="cstatus" name="cstatus" size="5">
+
+
+                                    <option value="0">Single</option>
+                                    <option value="1">Married</option>
+                                    <option value="2">Widow/er</option>
+                                    <option value="3">Separated</option>
+                                    <option value="4">Co-Habilitation</option>
+
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Educational Attainment</label>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="eattain" name="eattain" size="5">
+
+
+                                    <option value="0">Elementary Level</option>
+                                    <option value="1">Elementary Graduate</option>
+                                    <option value="2">High School Level</option>
+                                    <option value="3">High School Graduate</option>
+                                    <option value="4">College Level</option>
+                                    <option value="5">College Graduate</option>
+                                    <option value="6">Post Graduate</option>
+                                    <option value="7">Vocational</option>
+                                    <option value="8">SPED</option>
+                                    <option value="9">None</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Employment Status</label>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="estatus" name="estatus" size="5">
+
+
+                                    <option value="0">Employed</option>
+                                    <option value="1">Unemployed</option>
+                                    <option value="2">Retired</option>
+                                    <option value="3">Resigned</option>
+                                    <option value="4">Displaced Worker</option>
+                                    <option value="5">Returning OFW</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Nature of Employer</label>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="enature" name="enature" size="5">
+
+
+                                    <option value="0">Government</option>
+                                    <option value="1">Private</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Type of Employment</label>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="etype" name="etype" size="5">
+
+
+                                    <option value="0">Permanent</option>
+                                    <option value="1">Contractual</option>
+                                    <option value="2">Self-Employed</option>
+                                    <option value="3">Seasonal</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Type of Skill</label>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="typeskill" name="typeskill" size="5">
+
+
+                                    <option value="0">Officials of Govermnet and SPecila Interest Organizations, Corporate Executives, Managers, Managing Proprietors and Supervisors</option>
+                                    <option value="1">Professionals</option>
+                                    <option value="2">Technicians and Associate PProfessionals</option>
+                                    <option value="3">Clerks</option>
+                                    <option value="4">Service Workers and Shop and Market Sales Workers</option>
+                                    <option value="5">Farmers, Forestry Workers, and Fishermen</option>
+                                    <option value="6">Trades and Related Works</option>
+                                    <option value="7">Plant and Machine Operators and Assemblers</option>
+                                    <option value="8">Laborers</option>
+                                    <option value="9">Unskilled Workers</option>
+                                    <option value="10">Special Occupation</option>
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="sssno">S.S.S. No.
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="sssno" name="sssno" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="gsisno">GSIS No.
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="gsisno" name="gsisno" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="phealthno">Philhealth No.
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="phealthno" name="phealthno" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="color: #dddddd;" class="control-label col-md-3 col-sm-3 col-xs-12">Philhealth Type</label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control" id="phealthtype" name="phealthtype" size="5">
+
+
+                                    <option value="0">Philhealth Member</option>
+                                    <option value="1">Philhealth Member Dependant</option>
+
+
+
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <h2 style="color: white;">Organizational Information</h2>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="orgaff">Organization Affiliated
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="orgaff" name="orgaff" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="cperson">Contact Person
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="cperson" name="cperson" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="offaddress">Office Address
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="offaddress" name="offaddress" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend ">
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="orgtelno">Tel No.
+                                    <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input required type="text" id="orgtelno" name="orgtelno" class="form-control" placeholder="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="ol-md-6 col-sm-6 col-xs-12 col-md-offset-5">
+                                    <button type="submit" onclick="signUp()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Submit</button>
+                                    <button onclick="goBack()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Go Back</button>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <!-- F I R E B A S E   C O N N E C T I O N -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
