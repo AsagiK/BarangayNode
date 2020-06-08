@@ -17,4 +17,5 @@ router.route('/Dashboard').get(BrgyCtrl.Dashboard);
 router.route('/Login').get(BrgyCtrl.Login);
 router.route('/BarangayResApp').get(BrgyCtrl.BarangayResApp);
 router.route('/Comment').get(BrgyCtrl.Comment);
+router.route('/Comment1').get(BrgyCtrl.Comment1);
 module.exports = router;

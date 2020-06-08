@@ -22,8 +22,13 @@ var firebaseConfig = {
             var City = snap.child("city").val();
             var Postal = snap.child("postal").val();
 
-            $("#table_body1").append("<tr><td>"+ Email+"</td><td>"+Unit+" </td><td>"+Street+"</td><td> "+Barangay+" </td><td>"+City+"</td><td>"+Postal+"</td><td></td></tr>");
+            $("#table_body1").append("<tr><td>"+ Email+"</td><td>"+Unit+" </td><td>"+Street+"</td><td> "+Barangay+" </td><td>"+City+"</td><td>"+Postal+"</td><td><button onclick='Comment1()' id='addComm' class='btn btn-primary'>Add Comments</button></td></tr>");
 
             
         });
   });
+
+  function Comment1(){
+    window.location.href="/Comment1";
+    
+} 
