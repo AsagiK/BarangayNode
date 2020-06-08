@@ -9,6 +9,8 @@ router.route('/RegisterUser').post(SessCtrl.RegisterUser);
 //
 router.route('/CreateNewService').get(BrgyCtrl.CreateNewService); 
 router.route('/ClericalAssesment').get(BrgyCtrl.ClericalAssesment);
+router.route('/LocationalClearance').get(BrgyCtrl.LocationalClearance);
+router.route('/CommunityTax').get(BrgyCtrl.CommunityTax);
 router.route('/ApprovalPage').get(BrgyCtrl.ApprovalPage);
 router.route('/Dashboard').get(BrgyCtrl.Dashboard);
 router.route('/Login').get(BrgyCtrl.Login);

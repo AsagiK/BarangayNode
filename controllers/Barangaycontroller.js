@@ -27,29 +27,39 @@ var serviceAccount = require("../credentials/service.json");
 
 //---------
 module.exports = {
-    
+
     CreateNewService: function (req, resp) {
         resp.render('./pages/CreateNewService.ejs')
 
-    }, 
+    },
 
     ClericalAssesment: function (req, resp) {
         resp.render('./pages/ClericalAssesment.ejs')
 
-    }, 
+    },
+
+    LocationalClearance: function (req, resp) {
+        resp.render('./pages/LocationalClearance.ejs')
+
+    },
+
+    CommunityTax: function (req, resp) {
+        resp.render('./pages/CommunityTax.ejs')
+
+    },
 
     ApprovalPage: function (req, resp) {
         resp.render('./pages/ApprovalPage.ejs')
 
-    }, 
+    },
 
     Dashboard: function (req, resp) {
         resp.render('./pages/Dashboard.ejs')
 
-    }, 
+    },
 
     Login: function (req, resp) {
-        resp.render('./pages/Login.ejs') 
+        resp.render('./pages/Login.ejs')
 
-    }, 
+    },
 }
