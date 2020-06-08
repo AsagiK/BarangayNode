@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
-    <title>Barangay Officials Registration Form</title>
+    <title>Community Tax Application</title>
 
     <!-- Bootstrap -->
     <link href="assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -79,9 +79,9 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel" style="background-color: #543846; border-color: #543846 border-radius: 8px;">
                 <div class="x_content">
-                    <form id="form" data-parsley-validate class="form-horizontal form-label-left">
+                    <form id="community-tax-form" data-parsley-validate class="form-horizontal form-label-left">
                         <h1 style="color: white;">Barangay Community Tax Certificate Application Form</h1>
-
+                        <br>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend ">
                                 <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="name">Name:
@@ -124,9 +124,9 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12">
 
                                     <select class="form-control" name="sex" id="sex" aria-placeholder="Specify Sex">
-                                        <option value="-1">Specify Sex</option>
-                                        <option value="M">Male</option>
-                                        <option value="F">Female</option>
+                                        
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
 
                                     </select>
                                 </div>
@@ -136,13 +136,13 @@
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="position">Status:
+                                <label style="color: #dddddd;" class=" control-label col-md-3 col-sm-3 col-xs-12" for="position"> Civil Status:
                                     <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
 
                                     <select class="form-control" name="status" id="status" aria-placeholder="Status">
-                                        <option value="-1">Status</option>
+                                        
                                         <option value="Single">Single</option>
                                         <option value="Married">Married</option>
                                         <option value="Widower">Widower</option>
@@ -268,7 +268,7 @@
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <div class="ol-md-6 col-sm-6 col-xs-12 col-md-offset-5">
-                                    <button type="submit" onclick="signUp()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Submit</button>
+                                    <button type="submit"  class="btn btn-rimary" style="background-color: #2196F3; color: white;">Submit</button>
                                     <button onclick="goBack()" class="btn btn-rimary" style="background-color: #2196F3; color: white;">Go Back</button>
 
                                 </div>
@@ -305,7 +305,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
-    <script src="script.js"></script>
+    <script src="CommunityTax.js"></script>
 </body>
 
 </html>
